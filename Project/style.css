@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-header{
+  background-color: blue;
+  color: white;
+  margin-bottom: -5px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid green;
+    width: 100%;    
+    background-color: gray;
+
+}
+
+
+.side-bar{
+    position: block;
+    border: 2px solid blue;
+    height: 300px;
+    width: 300px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: steelblue;
+}
+.side-bar button{
+display:flex;
+width: 50%;
+background-color: blue;
+color: white;
+padding: 5px;
+font-size: 20px;
+}
+.side-bar button:hover{
+  background-color: green;
+  width: 70%;
+  padding: 10px;
+  font-size: 25px;
+}
+.content{
+    /* display: flex; */
+    border: 2px solid red;
+    height: 300px; 
+}
+.side-bar-right{
+    /* position: block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid blue;
+    height: 300px;
+    width: 100px;
+    float: right;
+    text-align: center;
+    /* position: fixed; */
+    
+}
+.footer{
+    border: 2px solid brown;
+    height: 200px;
+    width: 100%;
+}
+header{
+    font-size: 40px;
+    text-align: center;
+}
+
+/* SIDE-BAR */
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+position: fixed;
+width: 100px;
+display: flex;
+flex-direction: column;
+
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+      /* float: right; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+
+/* SIDE-BAR */
+
+/* ----------CIRCLE-BEHIND------------- */
+
+
+  
+  .clear{
+    clear: both;
+  }
+  
+  
+  .slide-toggle{
+    display: none;
+  }
+  
+  .slidemenu{
+    font-family: arial, sans-serif;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+  }
+  
+  .slidemenu label{
+    width: 25%;
+    text-align: center;
+    display: block;
+    float: left;
+    color: yellow;
+    /* opacity: 0.2; */
+  
+  }
+  
+  .slidemenu label:hover{
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .slidemenu label span{
+    display: block;
+    padding: 10px;    
+  }
+  
+  .slidemenu label .icon{
+    font-size: 70px;
+    border: solid 2px #333;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    line-height: 50px;
+    border-radius: 50%;
+  }
+  
+  /*Bar Style*/
+  
+  .slider{
+    width: 100%;
+    height: 5px;
+    display: block;
+    background: #ccc;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .slider .bar{
+    width: 25%;
+    height: 5px;
+    background: #333;
+    border-radius: 5px;
+  }
+  
+  /*Animations*/
+  .slidemenu label, .slider .bar {
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+  }
+  
+  /*Toggle*/
+  
+  .slidemenu .slide-toggle:checked + label{
+    opacity: 1;
+  }
+  
+  
+  
+  .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+  .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
+  .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
+  .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
+  
+
+/* -----------CIRCLE-BEHIND--------------- */
